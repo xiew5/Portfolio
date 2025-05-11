@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to book manager</title>
+</head>
+<body>
+<h3>Please enter the massage of your book</h3>
+<form method = "POST" action = "/save">
+    {% csrf_token %}
+        <label>Name<laber>
+        <input type = "text" name="book_name">
+
+        <label>Author<laber>
+        <input type = "text" name="book_author">
+
+        <label>date<laber>
+        <input type = "text" name="book_date">
+
+        <label>price<laber>
+        <input type = "text" name="book_price">
+    <button type = "submit">next</button>
+
+
+
+<a href="/addbook">AddBook</a>
+<a href="/list">BookList</a>
+<a href="/author">SearchAuthor</a>
+</body>
+</html>
